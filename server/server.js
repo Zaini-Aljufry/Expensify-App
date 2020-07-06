@@ -11,8 +11,6 @@ app.get('*', (req,res) =>{
     res.sendFile(path.join(pubDir, 'index.html'))
 })
 
-
-
 app.listen(port, () => {
     console.log(`Server is listening to port ${port}`)
 })
