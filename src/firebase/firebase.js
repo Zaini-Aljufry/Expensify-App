@@ -15,8 +15,12 @@ const firebaseConfig = {
   firebase.analytics();
 
   const database = firebase.database()
+  const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+  googleAuthProvider.setCustomParameters({
+    prompt: 'select_account'
+  });
 
- export {firebase, database as default}
+ export {firebase,googleAuthProvider, database as default}
 
 //   const onValueChange = database.ref().on('value',(snapshot)=>{
 //     console.log(snapshot)
