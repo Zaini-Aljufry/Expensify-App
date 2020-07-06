@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --config=jest.config.json",
     "server": "live-server public/",
-    "build": "webpack ",
+    "build:dev": "webpack ",
+    "build:prod": "webpack -p --env production",
     "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "dev-server": "webpack-dev-server"
   },
@@ -14,8 +15,12 @@
   "author": "Sayyed Amir Zaini",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -24,6 +29,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.5.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "jest": "^26.1.0",
     "live-server": "^1.2.1",
     "moment": "^2.27.0",
@@ -43,13 +49,9 @@
     "style-loader": "^1.2.1",
     "uuid": "^8.2.0",
     "validator": "^13.1.1",
-    "webpack-dev-server": "^3.11.0",
-    "@babel/core": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
-    "@babel/preset-react": "^7.10.4",
-    "babel-loader": "^7.1.5",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "devDependencies": {}
 }
