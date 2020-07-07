@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {startLogin} from '../actions/auth'
+import { GoogleLoginButton  } from "react-social-login-buttons";
 
 export const LogInPage = ({startLogin}) => {
         return(
@@ -8,9 +9,8 @@ export const LogInPage = ({startLogin}) => {
             <div className="box-layout__box">
                 <h1 className="box-layout__tittle">Expensify</h1>
                 <p className="box-layout__p">It's time to get your expenses in check</p>
-                <button className="button" onClick={startLogin}>Log In with Google</button>
+                <GoogleLoginButton  onClick={startLogin}/>
             </div>
-                
             </div>
         )
 }

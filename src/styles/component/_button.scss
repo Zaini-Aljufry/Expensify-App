@@ -19,3 +19,8 @@
     background: #888;
     margin-left: 1.5rem;
 }
+
+.button--modal{
+    margin: 2rem;
+    border: 0.2rem solid darken($color: $blue, $amount: 10);
+}
