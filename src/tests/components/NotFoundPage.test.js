@@ -1,9 +1,8 @@
-import {shallow} from 'enzyme'
 import React from 'react';
-import NotFoundPage from '../../components/NotFoundPage'
-import toJSON from 'enzyme-to-json'//serializer
+import { shallow } from 'enzyme';
+import NotFoundPage from '../../components/NotFoundPage';
 
 test('should render NotFoundPage correctly', () => {
-    const wrapper = shallow(<NotFoundPage />)
-    expect(toJSON(wrapper)).toMatchSnapshot();
-})
+  const wrapper = shallow(<NotFoundPage />);
+  expect(wrapper).toMatchSnapshot();
+});

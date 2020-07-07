@@ -1,9 +1,8 @@
-import {shallow} from 'enzyme'
 import React from 'react';
-import ExpenseDashboardPage from '../../components/ExpenseDashboardPage'
-import toJSON from 'enzyme-to-json'//serializer
+import { shallow } from 'enzyme';
+import ExpenseDashboardPage from '../../components/ExpenseDashboardPage';
 
 test('should render ExpenseDashboardPage correctly', () => {
-    const wrapper = shallow(<ExpenseDashboardPage />)
-    expect(toJSON(wrapper)).toMatchSnapshot();
-})
+  const wrapper = shallow(<ExpenseDashboardPage />);
+  expect(wrapper).toMatchSnapshot();
+});
