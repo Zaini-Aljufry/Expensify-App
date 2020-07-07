@@ -1,0 +1,15 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    margin: auto auto auto 0 ;
+    padding: 0 $m-size;
+    > * {
+        margin-bottom: $m-size;
+    }
+}
+
+.form__error{
+    margin: 0 0 $m-size 0;
+    font-style: italic;
+}
